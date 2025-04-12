@@ -10,7 +10,7 @@ package practica2;
  */
 public interface Magico {
     
-    void LanzarHechizo();
-    void AprenderHechizo();
+    void lanzarHechizo();
+    void aprenderHechizo();
     
 }

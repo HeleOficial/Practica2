@@ -19,9 +19,7 @@ public class Mago extends Criatura implements Magico {
     @Override
     public void atacar(Criatura objetivo) {
         int daño = fuerza;
-        if (arma != null) {
-            daño += arma.atacarConArma(objetivo);
-        }
+       
         System.out.println(nombre + " lanza un hechizo a " + objetivo.getNombre() + " con " + daño + " de daño");
         objetivo.defender(daño);
     }
