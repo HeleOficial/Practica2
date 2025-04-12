@@ -9,9 +9,9 @@ package practica2;
  * @author Juanm
  */
 public class Guerrero extends Criatura {
-    private String arma;
+    
 
-    public Guerrero(String nombre, int salud, int fuerza, String arma) {
+    public Guerrero(String nombre, int salud, int fuerza, Arma arma) {
         super(nombre, salud, fuerza);
         this.arma = arma;
     }

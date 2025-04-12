@@ -10,29 +10,38 @@ package practica2;
  * @author Juanm
  */
 public class Arma {
-    private String nombre;
-    private int dañoAdicional;
+    private String tipo;
+    private int nivel;
 
-    public Arma(String nombre, int dañoAdicional) {
-        this.nombre = nombre;
-        this.dañoAdicional = dañoAdicional;
+    public Arma(String tipo, int nivel) {
+        this.tipo = tipo;
+        this.nivel = nivel;
     }
 
-    public int atacarConArma() {
-        return getDañoAdicional();
+    public String getTipo() {
+        return tipo;
     }
 
-    public int getDañoAdicional() {
-        return dañoAdicional;
+    public void setTipo(String tipo) {
+        this.tipo = tipo;
     }
 
-    public String getNombre() {
-        return nombre;
+    public int getNivel() {
+        return nivel;
+    }
+    public int atacarConArma(Criatura objetivo) {
+    return 10; 
+}
+
+    public void setNivel(int nivel) {
+        this.nivel = nivel;
     }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
+    @Override
+    public String toString() {
+        return "Arma{" +
+                "tipo='" + tipo + '\'' +
+                ", nivel=" + nivel +
+                '}';
     }
-
-    
 }

@@ -12,6 +12,7 @@ public abstract class Criatura {
     protected String nombre;
     protected int salud;
     protected int fuerza;
+    protected Arma arma; 
 
     public Criatura(String nombre, int salud, int fuerza) {
         this.nombre = nombre;
@@ -50,4 +51,7 @@ public abstract class Criatura {
         this.fuerza = fuerza;
     }
 
+    public void equipaArma(Arma arma) {
+        this.arma = arma;
+    }
 }
